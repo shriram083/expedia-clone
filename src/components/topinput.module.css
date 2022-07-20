@@ -1,0 +1,15 @@
+.box {
+  width: 25px;
+  height: 25px;
+  padding: auto;
+  margin: auto;
+}
+
+label {
+  font-size: small;
+  color: grey;
+}
+
+h3 {
+  font-size: large;
+}
