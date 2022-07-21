@@ -5,7 +5,6 @@ import {
   Button,
   Checkbox,
   Flex,
-  Heading,
   HStack,
   Icon,
   Img,
