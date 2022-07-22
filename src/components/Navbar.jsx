@@ -15,8 +15,10 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
+  Tabs,
+  Image,
 } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons';
+import { HamburgerIcon, CloseIcon, AddIcon,BellIcon,ChevronDownIcon } from '@chakra-ui/icons';
 
 const Links = ["English","Lists your property","Support","Trips"];
 
@@ -39,7 +41,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box bg={useColorModeValue('white')} px={4} border={"1px solid grey"} justifyContent={"center"}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -48,9 +50,14 @@ export default function Navbar() {
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
           />
-          <HStack spacing={8} alignItems={'center'}>
+          <HStack alignItems={'center'}>
             <Box>
-              <img src='https://seekvectorlogo.com/wp-content/uploads/2022/01/expedia-vector-logo-2022.png' alt='Logo' width="20%" />
+              <Image src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1&2" alt="Logo" width={"100%"} objectFit={"contain"}/>
+            </Box>
+            <Box>
+              <Tabs >
+                More Travel{<ChevronDownIcon/>}
+              </Tabs>
             </Box>
             <HStack
               as={'nav'}
@@ -61,15 +68,8 @@ export default function Navbar() {
               ))}
             </HStack>
           </HStack>
-          <Flex alignItems={'center'}>
-            <Button
-              variant={'solid'}
-              colorScheme={'teal'}
-              size={'sm'}
-              mr={4}
-              leftIcon={<AddIcon />}>
-              Action
-            </Button>
+          <Flex alignItems={'center'} justifyContent={"left"} spacing={4}>
+            <BellIcon boxSize={"1.5em"} />
             <Menu>
               <MenuButton
                 as={Button}
