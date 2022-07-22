@@ -22,7 +22,7 @@ import { HamburgerIcon, CloseIcon, AddIcon,BellIcon,ChevronDownIcon } from '@cha
 
 const Links = ["English","Lists your property","Support","Trips"];
 
-const NavLink = ({ children }: { children: ReactNode }) => (
+const NavLink = ({ children }) => (
   <Link
     px={2}
     py={1}
@@ -54,11 +54,14 @@ export default function Navbar() {
             <Box>
               <Image src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1&2" alt="Logo" width={"100%"} objectFit={"contain"}/>
             </Box>
+            <HStack>
             <Box>
               <Tabs >
                 More Travel{<ChevronDownIcon/>}
               </Tabs>
             </Box>
+            </HStack>
+            <Flex alignItems={"center"} justifycontent={"left"} spacing={4}>
             <HStack
               as={'nav'}
               spacing={4}
@@ -67,6 +70,7 @@ export default function Navbar() {
                 <NavLink key={link}>{link}</NavLink>
               ))}
             </HStack>
+            </Flex>
           </HStack>
           <Flex alignItems={'center'} justifyContent={"left"} spacing={4}>
             <BellIcon boxSize={"1.5em"} />
@@ -85,10 +89,10 @@ export default function Navbar() {
                 />
               </MenuButton>
               <MenuList>
-                <MenuItem>Link 1</MenuItem>
-                <MenuItem>Link 2</MenuItem>
+                <MenuItem>List of Favourites</MenuItem>
+                <MenuItem>Expedia Rewards</MenuItem>
                 <MenuDivider />
-                <MenuItem>Link 3</MenuItem>
+                <MenuItem>Feedback</MenuItem>
               </MenuList>
             </Menu>
           </Flex>
