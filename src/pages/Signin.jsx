@@ -35,19 +35,18 @@ export default function Login() {
           <Stack spacing={4}>
             <FormControl id="email">
               <FormLabel>Email address</FormLabel>
-              <Input type="email" />
+              <Input type="email" placeholder='Email address'/>
             </FormControl>
             <FormControl id="password">
               <FormLabel>Password</FormLabel>
-              <Input type="password" />
+              <Input type="password" placeholder='password'/>
             </FormControl>
             <Stack spacing={10}>
               <Stack
                 direction={{ base: 'column', sm: 'row' }}
                 align={'start'}
                 justify={'space-between'}>
-                <Checkbox>Remember me</Checkbox>
-                <Link color={'blue.400'}>Forgot password?</Link>
+                <Checkbox>This is a public or shared device</Checkbox>                
               </Stack>
               <Button
                 bg={'blue.400'}
@@ -58,6 +57,14 @@ export default function Login() {
                 Sign in
               </Button>
             </Stack>
+            <Link color={'blue.400'}>Forgot password?</Link>
+            <Stack
+                direction={{ base: 'column', sm: 'row' }}
+                align={'start'}
+                justifyContent={"center"}>
+                <Box>Don't have an account?</Box>
+                <Link color={'blue.400'}>CreateOne</Link>                
+              </Stack>
           </Stack>
         </Box>
       </Stack>
