@@ -6,6 +6,8 @@ import Package from "./pages/Package";
 import Home from "./pages/Home";
 import PackageDetails from "./pages/PackageDetails";
 import Service from "./pages/Service";
+import Login from "./pages/Signin";
+import SignupCard from "./pages/Signup";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
       </Link>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/signin" element={<Login/>} />
+        <Route path={"/signup"} element={<SignupCard/>}/>
         <Route path="/package" element={<Package />} />
         <Route path="/package/:id" element={<PackageDetails />} />
         <Route path="/service" element={<Service />} />

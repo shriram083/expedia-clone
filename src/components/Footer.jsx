@@ -12,13 +12,13 @@ import {
 
 const Logo=()=> {
   return (
-    <Image src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="Logo(Groups)" width={"50%"} height={"10%"}/>
+    <Image src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="Logo(Groups)" width={"100%"} height={"10%"}/>
   );
 };
 
 const ListHeader = ({ children }) => {
   return (
-    <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
+    <Text fontWeight={'500'} fontSize={'lg'} mb={2} color={"black"}>
       {children}
     </Text>
   );
@@ -33,16 +33,13 @@ export default function Footer() {
       color={useColorModeValue('gray.700', 'gray.200')}>
       <Container as={Stack} maxW={'7xl'} py={10} borderBottom={"1px solid grey"} >
         <SimpleGrid
-          templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 1fr 1fr' }}
+          templateColumns={{ sm: '1fr 1fr', md: '1fr 1fr 1fr 1fr 1fr' }}
           gap={"1rem"} spacing={4}  fontSize={"12px"}>
-          <Stack justifyContent={"left"} >           
+          <Stack align={"flex-start"} >           
               <Logo color={useColorModeValue('gray.700', 'white')} />
-            {/* <Text fontSize={'sm'}>
-              © 2022 Chakra Templates. All rights reserved
-            </Text> */}
           </Stack>
-          <Stack textAlign={"left"} align={'flex-start'}>
-            <ListHeader>Company</ListHeader>
+          <Stack textAlign={"left"} align={'flex-start'} color={"#507ee1"}>
+            <ListHeader >Company</ListHeader>
             <Link href={'#'}>About</Link>
             <Link href={'#'}>Jobs</Link>
             <Link href={'#'}>List Your Property</Link>
@@ -51,7 +48,7 @@ export default function Footer() {
             <Link href={'#'}>Investor Relationships</Link>
             <Link href={'#'}>Advertising</Link>
           </Stack>
-          <Stack textAlign={"left"} align={'flex-start'}>
+          <Stack textAlign={"left"} align={'flex-start'} color={"#507ee1"}>
             <ListHeader>Explore</ListHeader>
             <Link href={'#'}>United states of America Travel guide</Link>
             <Link href={'#'}>Hotels in United States of America</Link>
@@ -61,7 +58,7 @@ export default function Footer() {
             <Link href={'#'}>Car Rentals in United States of America</Link>
             <Link href={'#'}>All Accomodation types</Link>
           </Stack>
-          <Stack  textAlign={"left"}align={'flex-start'}>
+          <Stack  textAlign={"left"}align={'flex-start'} color={"#507ee1"}>
             <ListHeader>Policies</ListHeader>
             <Link href={'#'}>Privacy policy</Link>
             <Link href={'#'}>Terms of Use</Link>
@@ -70,7 +67,7 @@ export default function Footer() {
             <Link href={'#'}>Accessability</Link>
             <Link href={'#'}>Do not sell my personal information</Link>
           </Stack>
-          <Stack textAlign={"left"} align={'flex-start'}>
+          <Stack textAlign={"left"} align={'flex-start'} color={"#507ee1"}>
             <ListHeader>Help</ListHeader>
             <Link href={'#'}>Support</Link>
             <Link href={'#'}>Cancel your hotel or vacation rental Booking</Link>
