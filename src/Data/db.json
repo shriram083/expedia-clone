@@ -11,7 +11,8 @@
       "rating": 4.5,
       "reviews": "Wonderful (993 reviews)",
       "Price": "$209",
-      "total": "$708 total"
+      "total": "$708 total",
+      "tag": "Member price available"
     },
     {
       "id": 2,
@@ -24,7 +25,9 @@
       "rating": 4.1,
       "reviews": "Very Good (993 reviews)",
       "Price": "$146",
-      "total": "$499 total"
+      "total": "$499 total",
+      "tag": "We have 1 left at",
+      "color": "green"
     },
     {
       "id": 3,
@@ -37,7 +40,8 @@
       "rating": 2,
       "reviews": "Wonderful (683 reviews)",
       "Price": "$187",
-      "total": "$668 total"
+      "total": "$668 total",
+      "tag": "Member price available"
     },
     {
       "id": 4,
@@ -50,7 +54,8 @@
       "rating": 3,
       "reviews": "Good (440 reviews)",
       "Price": "$125",
-      "total": "$430 total"
+      "total": "$430 total",
+      "tag": "Member price available"
     },
     {
       "id": 5,
@@ -63,11 +68,12 @@
       "rating": 3.5,
       "reviews": "Exellent (993 reviews)",
       "Price": "$365",
-      "total": "$768 total"
+      "total": "$768 total",
+      "tag": "Member price available"
     },
     {
       "id": 6,
-      "img": "https://images.trvl-media.com/hotels/1000000/30000/21900/21874/f97a53c1.jpg?impolicy=resizecrop&rw=598&ra=fit",
+      "img": "https://images.trvl-media.com/hotels/1000000/10000/2600/2575/fe57348b.jpg?impolicy=resizecrop&rw=598&ra=fit",
       "name": "Novotel Genova City",
       "details": "4.27 away from Cristoforo Colombo (GOA)",
       "p1": "Genova city center, Stay safe sleep well",
@@ -76,7 +82,8 @@
       "rating": 1,
       "reviews": "Wonderful (993 reviews)",
       "Price": "$240",
-      "total": "$865 total"
+      "total": "$865 total",
+      "tag": "Member price available"
     },
     {
       "id": 7,
@@ -89,7 +96,8 @@
       "rating": 2.5,
       "reviews": "Very Good (993 reviews)",
       "Price": "$346",
-      "total": "$579 total"
+      "total": "$579 total",
+      "tag": "Member price available"
     },
     {
       "id": 8,
@@ -102,7 +110,8 @@
       "rating": 5,
       "reviews": "Wonderful (683 reviews)",
       "Price": "$870",
-      "total": "$1668 total"
+      "total": "$1668 total",
+      "tag": "Member price available"
     },
     {
       "id": 9,
@@ -115,7 +124,8 @@
       "rating": 1.9,
       "reviews": "Good (440 reviews)",
       "Price": "$87",
-      "total": "$250 total"
+      "total": "$250 total",
+      "tag": "Member price available"
     },
     {
       "id": 10,
@@ -128,7 +138,8 @@
       "rating": 4.5,
       "reviews": "Exellent (993 reviews)",
       "Price": "$565",
-      "total": "$1768 total"
+      "total": "$1768 total",
+      "tag": "Member price available"
     }
   ]
 }
