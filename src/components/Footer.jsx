@@ -7,7 +7,8 @@ import {
   Stack,
   Text,
   useColorModeValue,
-  Image
+  Image,
+  Center
 } from '@chakra-ui/react';
 
 const Logo=()=> {
@@ -80,10 +81,10 @@ export default function Footer() {
       </Container>
       <Container  maxW={"6xl"} marginTop={5} fontSize={"12px"} >
         <Box>
-          <Text>Expedia-clone, Inc. is not responsible for content on external Web sites</Text>
+<Center><Text>Expedia-clone, Inc. is not responsible for content on external Web sites</Text></Center>
         </Box>
         <Box>
-          <Text>© 2022 Expedia-clone, Inc., an Expedia-clone Group company. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc. CST# 2029030-50.</Text>
+<Center><Text>© 2022 Expedia-clone, Inc., an Expedia-clone Group company. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc. CST# 2029030-50.</Text></Center>
         </Box>
       </Container>
     </Box>
