@@ -5,7 +5,7 @@ import RoomAminities from "./RoomAminities";
 
 const Aminities = () => {
   return (
-    <Box boxShadow={"xl"} p="10px">
+    <Box boxShadow="xl" m="auto" p="10px" mb={"50px"} w="1100px" bg="white">
       <PropertyAminities />
       <RoomAminities />
     </Box>

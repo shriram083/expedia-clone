@@ -5,7 +5,7 @@ import AboutProperty from "./AboutProperty";
 
 const Location = () => {
   return (
-    <Box w="1100px" m="auto">
+    <Box w="1100px" m="auto" bg="white" boxShadow={"xl"}>
       <AboutArea />
       <AboutProperty />
     </Box>

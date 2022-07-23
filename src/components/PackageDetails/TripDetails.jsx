@@ -10,6 +10,7 @@ const TripDetails = () => {
       display={"flex"}
       justifyContent="space-between"
       alignItems="center"
+      bg="white"
     >
       <Box textAlign="left">
         <Heading fontSize={"17px"}>Trip Details</Heading>
