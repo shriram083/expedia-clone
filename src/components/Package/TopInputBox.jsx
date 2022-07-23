@@ -7,7 +7,6 @@ import {
   Flex,
   HStack,
   Icon,
-  Img,
   Input,
   Select,
   Text,
@@ -16,22 +15,25 @@ import {
 import React from "react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { MdLocationOn } from "react-icons/md";
-import styles from "../components/topinput.module.css";
+import { ImUser } from "react-icons/im";
+import { BsCalendarDate } from "react-icons/bs";
+import { MdOutlineAirlineSeatReclineExtra } from "react-icons/md";
+
 const TopInputBox = () => {
   return (
-    <Box width="70%" padding="5px" margin="auto" border="1px solid red">
-      <VStack
-        padding="5"
-        //   border="1px solid green"
-      >
+    <Box width="70%" padding="5px" margin="auto">
+      <VStack padding="5">
         <HStack>
           <Flex border="1px solid black" h="50px" w="450px" borderRadius="md">
-            <Box className={styles.box}>
-              {/* <Img
-                src="https://cdn-icons-png.flaticon.com/512/484/484167.png"
-                alt="location icon"
-              /> */}
-              <Icon fontSize="xxl" as={MdLocationOn} />
+            <Box
+              style={{
+                width: "25px",
+                height: "25px",
+                padding: "auto",
+                margin: "auto",
+              }}
+            >
+              <Icon fontSize="2xl" as={MdLocationOn} />
             </Box>
 
             <Flex
@@ -51,11 +53,15 @@ const TopInputBox = () => {
             </Flex>
           </Flex>
           <Flex borderRadius="md" border="1px solid black" h="50px" w="450px">
-            <Box className={styles.box}>
-              <Img
-                src="https://cdn-icons-png.flaticon.com/512/484/484167.png"
-                alt="location icon"
-              />
+            <Box
+              style={{
+                width: "25px",
+                height: "25px",
+                padding: "auto",
+                margin: "auto",
+              }}
+            >
+              <Icon fontSize="2xl" as={MdLocationOn} />
             </Box>
             <Flex
               flexDirection="column"
@@ -74,11 +80,15 @@ const TopInputBox = () => {
             </Flex>
           </Flex>
           <Flex border="1px solid black" h="50px" w="450px" borderRadius="md">
-            <Box className={styles.box}>
-              <Img
-                src="https://cdn-icons-png.flaticon.com/512/456/456212.png"
-                alt="location icon"
-              />
+            <Box
+              style={{
+                width: "25px",
+                height: "25px",
+                padding: "auto",
+                margin: "auto",
+              }}
+            >
+              <Icon fontSize="2xl" as={ImUser}></Icon>
             </Box>
 
             <Flex
@@ -100,11 +110,15 @@ const TopInputBox = () => {
         </HStack>
         <HStack>
           <Flex border="1px solid black" h="50px" w="450px" borderRadius="md">
-            <Box className={styles.box}>
-              <Img
-                src="https://cdn-icons-png.flaticon.com/512/566/566234.png"
-                alt="Seating icon"
-              />
+            <Box
+              style={{
+                width: "25px",
+                height: "25px",
+                padding: "auto",
+                margin: "auto",
+              }}
+            >
+              <Icon fontSize="2xl" as={MdOutlineAirlineSeatReclineExtra}></Icon>
             </Box>
 
             <Flex
@@ -129,11 +143,15 @@ const TopInputBox = () => {
             </Flex>
           </Flex>
           <Flex border="1px solid black" h="50px" w="450px" borderRadius="md">
-            <Box className={styles.box}>
-              <Img
-                src="https://cdn-icons-png.flaticon.com/512/55/55281.png"
-                alt="location icon"
-              />
+            <Box
+              style={{
+                width: "25px",
+                height: "25px",
+                padding: "auto",
+                margin: "auto",
+              }}
+            >
+              <Icon fontSize="2xl" as={BsCalendarDate}></Icon>
             </Box>
 
             <Flex
@@ -154,11 +172,15 @@ const TopInputBox = () => {
             </Flex>
           </Flex>
           <Flex border="1px solid black" h="50px" w="450px" borderRadius="md">
-            <Box className={styles.box}>
-              <Img
-                src="https://cdn-icons-png.flaticon.com/512/55/55281.png"
-                alt="location icon"
-              />
+            <Box
+              style={{
+                width: "25px",
+                height: "25px",
+                padding: "auto",
+                margin: "auto",
+              }}
+            >
+              <Icon fontSize="2xl" as={BsCalendarDate}></Icon>
             </Box>
 
             <Flex

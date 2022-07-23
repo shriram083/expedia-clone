@@ -23,12 +23,18 @@ const PackageSidebar = () => {
   const [value, setValue] = React.useState("");
   const labelStyles = {
     mt: "2",
-    ml: "-3.5",
+    ml: "-35",
     fontSize: "lg",
   };
 
   return (
-    <Box w="15%" margin="auto" textAlign="start">
+    <Box
+      w="20%"
+      // margin="auto"
+      mt="6"
+      boxSizing="border-box"
+      textAlign="start"
+    >
       {/* popular filters */}
       <VStack textAlign="start" alignItems="self-start" w="90%">
         <Heading>Filter by</Heading> <br />
@@ -48,11 +54,11 @@ const PackageSidebar = () => {
           onChange={(val) => setSliderValue(val)}
         >
           <SliderMark value={0} {...labelStyles}>
-            $0
+            <Text> $0</Text>
           </SliderMark>
 
-          <SliderMark marginLeft="-30" value={300} {...labelStyles}>
-            $300+
+          <SliderMark value={100} {...labelStyles}>
+            <Text> $300+</Text>
           </SliderMark>
 
           <SliderMark
@@ -62,7 +68,6 @@ const PackageSidebar = () => {
             color="white"
             mt="-10"
             ml="-5"
-            w="100%"
           >
             {sliderValue * 3}$
           </SliderMark>
@@ -99,11 +104,11 @@ const PackageSidebar = () => {
       <br />
       {/* star rating  */}
       <Text fontWeight="bold">Star rating</Text>
-      <HStack alignItems="self-start" p="4" w="90%" border>
+      <HStack alignItems="self-start" p="4" w="90%">
         <Flex
           p="2"
           w="30%"
-          flexDirection="space-around"
+          direction="row"
           borderRadius="5"
           textAlign="center"
           border="1px solid black"

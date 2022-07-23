@@ -15,12 +15,14 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
+  Tabs,
+  Image,
 } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons';
+import { HamburgerIcon, CloseIcon, AddIcon,BellIcon,ChevronDownIcon } from '@chakra-ui/icons';
 
 const Links = ["English","Lists your property","Support","Trips"];
 
-const NavLink = ({ children }: { children: ReactNode }) => (
+const NavLink = ({ children }) => (
   <Link
     px={2}
     py={1}
@@ -39,7 +41,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box bg={useColorModeValue('white')} px={4} border={"1px solid grey"} justifyContent={"center"}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -48,10 +50,18 @@ export default function Navbar() {
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
           />
-          <HStack spacing={8} alignItems={'center'}>
+          <HStack alignItems={'center'}>
             <Box>
-              <img src='https://seekvectorlogo.com/wp-content/uploads/2022/01/expedia-vector-logo-2022.png' alt='Logo' width="20%" />
+              <Image src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1&2" alt="Logo" width={"100%"} objectFit={"contain"}/>
             </Box>
+            <HStack>
+            <Box>
+              <Tabs >
+                More Travel{<ChevronDownIcon/>}
+              </Tabs>
+            </Box>
+            </HStack>
+            <Flex alignItems={"center"} justifycontent={"left"} spacing={4}>
             <HStack
               as={'nav'}
               spacing={4}
@@ -60,16 +70,10 @@ export default function Navbar() {
                 <NavLink key={link}>{link}</NavLink>
               ))}
             </HStack>
+            </Flex>
           </HStack>
-          <Flex alignItems={'center'}>
-            <Button
-              variant={'solid'}
-              colorScheme={'teal'}
-              size={'sm'}
-              mr={4}
-              leftIcon={<AddIcon />}>
-              Action
-            </Button>
+          <Flex alignItems={'center'} justifyContent={"left"} spacing={4}>
+            <BellIcon boxSize={"1.5em"} />
             <Menu>
               <MenuButton
                 as={Button}
@@ -85,10 +89,10 @@ export default function Navbar() {
                 />
               </MenuButton>
               <MenuList>
-                <MenuItem>Link 1</MenuItem>
-                <MenuItem>Link 2</MenuItem>
+                <MenuItem>List of Favourites</MenuItem>
+                <MenuItem>Expedia Rewards</MenuItem>
                 <MenuDivider />
-                <MenuItem>Link 3</MenuItem>
+                <MenuItem>Feedback</MenuItem>
               </MenuList>
             </Menu>
           </Flex>
