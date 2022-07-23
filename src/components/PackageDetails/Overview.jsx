@@ -19,7 +19,7 @@ const Overview = () => {
   return (
     <Box m={"50px"} textAlign={"left"} display="flex" pb={"20px"}>
       <Box w="700px">
-        <Box border="1px solid red" gap={"10px"}>
+        <Box gap={"10px"}>
           <Heading>ITC Kakatiya, a Luxury Collection Hotel, Hyderabad</Heading>
           <Flex>
             <AiFillStar color="#727483" />
@@ -32,7 +32,7 @@ const Overview = () => {
           <Text>Guests rated this property 4.2/5 for cleanliness.</Text>
           <Text>{"See All Reviews >"}</Text>
         </Box>
-        <Box border={"1px solid red"}>
+        <Box>
           <Heading fontSize={"20px"} fontWeight="500" mt={"20px"}>
             Popular Animities
           </Heading>
@@ -76,7 +76,7 @@ const Overview = () => {
           </Text>
         </Box>
 
-        <Box border={"1px solid red"}>
+        <Box>
           <Heading fontSize={"20px"} fontWeight="500" mt={"20px"}>
             Cleaning and safety practices
           </Heading>
@@ -112,13 +112,7 @@ const Overview = () => {
           </Text>
         </Box>
       </Box>
-      <Box
-        border={"1px solid red"}
-        w="300px"
-        display="flex"
-        flexDirection="column"
-        gap="10px"
-      >
+      <Box w="300px" display="flex" flexDirection="column" gap="10px">
         <Image src="https://maps.googleapis.com/maps/api/staticmap?channel=expedia-HotelInformation&maptype=roadmap&format=jpg&zoom=13&scale=&size=375x250&markers=icon:https://a.travel-assets.com/shopping-pwa/images/his-preview-marker.png%7C17.432514,78.457279&key=AIzaSyCYjQus5kCufOpSj932jFoR_AJiL9yiwOw&signature=_6aDzPc7L4rEraDl5EBnrysvkx8=" />
         <Text>6 -3 -1187, Begumpet, Hyderabad, Andhra Pradesh, 500016</Text>
         <Text color={"blue.600"} cursor="pointer">
