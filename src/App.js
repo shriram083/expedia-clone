@@ -6,13 +6,17 @@ import Package from "./pages/Package";
 import Home from "./pages/Home";
 import PackageDetails from "./pages/PackageDetails";
 import Service from "./pages/Service";
+
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+
 import Login from "./pages/Signin";
 import SignupCard from "./pages/Signup";
+
 
 function App() {
   return (
     <div className="App">
-
       <Link to="/">
         <Button>Home</Button>
       </Link>
@@ -25,6 +29,7 @@ function App() {
       <Link to="/service">
         <Button>Support</Button>
       </Link>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<Login/>} />
@@ -33,7 +38,7 @@ function App() {
         <Route path="/package/:id" element={<PackageDetails />} />
         <Route path="/service" element={<Service />} />
       </Routes>
-
+      <Footer />
     </div>
   );
 }
