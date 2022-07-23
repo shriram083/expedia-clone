@@ -19,7 +19,13 @@ import { AiOutlineInfoCircle } from "react-icons/ai";
 const RoomCard = ({ name, price, image }) => {
   const [value, setValue] = useState("1");
   return (
-    <Box boxShadow="base" width="350px" borderRadius="10px" textAlign="left">
+    <Box
+      boxShadow="base"
+      width="350px"
+      borderRadius="10px"
+      textAlign="left"
+      bg="white"
+    >
       <Image src={image} borderRadius="10px 10px 0px 0px" h="200px" w="350px" />
       <Heading m="10px" fontSize="16px">
         {name}

@@ -15,7 +15,7 @@ import { FaBusAlt } from "react-icons/fa";
 
 const AboutArea = () => {
   return (
-    <Box boxShadow={"xl"} p="10px" mb="50px">
+    <Box p="10px" mb="50px" borderBottom="1px solid #e3e3e3">
       <Flex>
         <Box
           w="350px"

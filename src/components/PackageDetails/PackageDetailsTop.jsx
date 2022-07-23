@@ -8,7 +8,7 @@ import ChooseRoom from "./ChooseRoom";
 const PackageDetailsTop = () => {
   return (
     <Box width="1100px" m="auto" mb="50px">
-      <Box boxShadow="xl" mb="-30px">
+      <Box boxShadow="xl" mb="-30px" bg="white">
         <Images />
         <Overview />
       </Box>
