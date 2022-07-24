@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+# “Expedia.com” Website Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Homepage ](https://github.com/shriram083/flying-word-4664/blob/master/public/screenshots/Home1.png)
 
-## Available Scripts
+### Expedia is the online Travel to buy fresh fruits and vegetables, herbs and dry fruits.
 
-In the project directory, you can run:
+We are travelers and technologists. We work across time zones, hemispheres, cultures and languages. We’re used to breaking things down and building them back up again, until they’re even better. We know travel can be hard, but we also know that it’s worth it, every time. And because we believe travel is a force for good, we take our roles seriously. We’re here to build great products, and facilitate connections between travelers and our partners that truly bring good into the world.
 
-### `npm start`
+## Technologies we used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[![React](<https://img.shields.io/badge/React_(17.0.2)-20232A?style=for-the-badge&logo=react&logoColor=61DAFB>)](https://reactjs.org/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[![GPLv3 License](<https://img.shields.io/badge/Redux_(4.1.2)-593D88?style=for-the-badge&logo=redux&logoColor=white>)](https://redux.js.org/)
 
-### `npm test`
+[![AGPL License](https://img.shields.io/badge/Chakra%20UI-3bc7bd?style=for-the-badge&logo=chakraui&logoColor=white)](https://chakra-ui.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[![AGPL License](https://img.shields.io/badge/Rest_API-02303A?style=for-the-badge&logo=react-router&logoColor=white)](https://www.npmjs.com/package/json-server)
 
-### `npm run build`
+[![AGPL License](https://img.shields.io/badge/Styled-Component-orange)](https://styled-components.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Login/Signup User Account
+- Landing Page
+- Navbar
+- Footer
+- Different Pacages to stay
+- Detailed information page for Packages
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## 🚀 Our Team Members:-
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Shriram Deshpande
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Rohit Bhaud
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Anwardeen M
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Pawanraje Kadam
 
-## Learn More
+## Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Homepage -
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This is the main landing page of our website. Here clicking on any option on the Navbar and Images will redirect the user to the respective Product Page.
 
-### Code Splitting
+This page is functional and responsive.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Homepage ](https://github.com/shriram083/flying-word-4664/blob/master/public/screenshots/Home1.png)
 
-### Analyzing the Bundle Size
+#### Footer -
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+User can see all the insides of the company from here..
 
-### Making a Progressive Web App
+![Footer bar](https://github.com/shriram083/flying-word-4664/blob/master/public/screenshots/Home3.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Sign up / Sign in Page -
 
-### Advanced Configuration
+On this page, you can register a user. If the user is already registered, you can simply sign in by providing valid details of the user.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Sign up](https://github.com/shriram083/flying-word-4664/blob/master/public/screenshots/SignUp.png)
+![Sign ip](https://github.com/shriram083/flying-word-4664/blob/master/public/screenshots/SignIn.png)
 
-### Deployment
+#### Package Page -
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Here users can browse all the relevent hotels list.
 
-### `npm run build` fails to minify
+![Products Page](https://github.com/shriram083/flying-word-4664/blob/master/public/screenshots/Package1.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Package Details -
+
+Here user will be able to see all the detailed information of perticular hotel.
+
+![Cart](https://github.com/shriram083/flying-word-4664/blob/master/public/screenshots/PackageDetails1.png)
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/shriram083/flying-word-4664.git
+```
+
+Go to the project directory
+
+```bash
+  cd flying-word-4664
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the localhost server
+
+```bash
+  npm start
+```
+
+Start the local API server
+
+```bash
+  npm run server
+```
+
+## Or refer any one deployed link
+
+### Netlify Link
+
+
+
+### Vercel Link
+
+
