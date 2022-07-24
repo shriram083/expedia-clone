@@ -11,6 +11,7 @@ const initState = {
 };
 
 export const appReducer = (state = initState, { type, payload }) => {
+  console.log(state.hotels, "hotels");
   switch (type) {
     case GET_HOTELS_REQUEST:
       return {

@@ -1,19 +1,16 @@
 import { Box, Flex, Icon, Image, Text, VStack } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { GrTag } from "react-icons/gr";
-import { useDispatch, useSelector } from "react-redux";
-import { getHotelsList } from "../../redux/app/appActions";
+import { useSelector } from "react-redux";
+
 const HotelList = () => {
   const hotelList = useSelector((state) => state.appReducer.hotels);
-  console.log(hotelList);
-  const dispatch = useDispatch();
+  // console.log(hotelList);
 
-  useEffect(() => {
-    dispatch(getHotelsList());
-  }, [dispatch]);
+  console.log(hotelList);
 
   return (
-    <Box w="80%" mt="10px">
+    <Box w="85%" mt="10px">
       {hotelList.map((el) => (
         <Flex
           mt="15px"
@@ -71,13 +68,13 @@ const HotelList = () => {
                   </Box>
 
                   <Box ml="8px">
-                    <Text> {el.tag}</Text>
+                    <Text>{el?.tag ? el.tag : "Member Price avilable"}</Text>
                   </Box>
                 </Flex>
                 {/* price box  */}
                 <Box w="30%" alignItems="flex-end">
                   <Text fontWeight="bold" fontSize="25px">
-                    {el.Price}
+                    {el.price}
                   </Text>
                   <Text>{el.total}</Text>
                 </Box>

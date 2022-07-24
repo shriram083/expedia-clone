@@ -8,11 +8,17 @@
       "p1": "Genova city center, Stay safe sleep well",
       "p2": "Just renovated, Health and safety prevention measures adopted. Restaurant with open terrace Parking available",
       "refund": "Fully Refundable",
-      "rating": 4.5,
+      "rating": 4,
       "reviews": "Wonderful (993 reviews)",
-      "Price": "$209",
+      "price": "$209",
       "total": "$708 total",
-      "tag": "Member price available"
+      "tag": "Member p available",
+      "popularF": "Free airport shuttle",
+      "populatL": "Port of geonoa ",
+      "meals": "Breakfast included",
+      "amenities": "Free airport shuttle",
+      "expediaR": "VIP Access Properties",
+      "accesibility": "Wheelchair-accecibility parking"
     },
     {
       "id": 2,
@@ -22,12 +28,18 @@
       "p1": "Nothing feels like being there in person",
       "p2": "Whether it's travelling to see family, freinds or collueges we look forward to welcoming you. Kids stay and eat free.Book now",
       "refund": "Fully Refundable",
-      "rating": 4.1,
+      "rating": 4,
       "reviews": "Very Good (993 reviews)",
-      "Price": "$146",
+      "price": "$146",
       "total": "$499 total",
       "tag": "We have 1 left at",
-      "color": "green"
+      "color": "green",
+      "popularF": "Pool",
+      "populatL": "cruise ship terminal",
+      "meals": " Lunch included",
+      "amenities": "Pool",
+      "expediaR": "VIP Access Properties",
+      "accesibility": " Elevator"
     },
     {
       "id": 3,
@@ -39,9 +51,15 @@
       "refund": "",
       "rating": 2,
       "reviews": "Wonderful (683 reviews)",
-      "Price": "$187",
+      "price": "$187",
       "total": "$668 total",
-      "tag": "Member price available"
+      "tag": "Member price available",
+      "popularF": "All inclusive",
+      "populatL": "old fort",
+      "meals": " Dinner included",
+      "amenities": " Ocean view",
+      "expediaR": "VIP Access Properties",
+      "accesibility": " Accecibility bathroom"
     },
     {
       "id": 4,
@@ -53,9 +71,15 @@
       "refund": "Breakfast Included",
       "rating": 3,
       "reviews": "Good (440 reviews)",
-      "Price": "$125",
+      "price": "$125",
       "total": "$430 total",
-      "tag": "Member price available"
+      "tag": "Member price available",
+      "popularF": "Ocean view",
+      "populatL": " gaslini hospital",
+      "meals": "Breakfast included",
+      "amenities": " Spa",
+      "expediaR": "Member Prices",
+      "accesibility": "Roll-in-shower"
     },
     {
       "id": 5,
@@ -65,11 +89,17 @@
       "p1": "Genova city center, Stay safe sleep well",
       "p2": "Just renovated, Health and safety prevention measures adopted. Restaurant with open terrace Parking available",
       "refund": "Reserve now, pay later",
-      "rating": 3.5,
+      "rating": 3,
       "reviews": "Exellent (993 reviews)",
-      "Price": "$365",
+      "price": "$365",
       "total": "$768 total",
-      "tag": "Member price available"
+      "tag": "Member price available",
+      "popularF": "Free airport shuttle",
+      "populatL": "pizaa de ferrari",
+      "meals": " Dinner included",
+      "amenities": " Free WiFi",
+      "expediaR": "VIP Access Properties",
+      "accesibility": "Wheelchair-accecibility parking"
     },
     {
       "id": 6,
@@ -79,11 +109,17 @@
       "p1": "Genova city center, Stay safe sleep well",
       "p2": "Just renovated, Health and safety prevention measures adopted. Restaurant with open terrace Parking available",
       "refund": "Fully Refundable",
-      "rating": 1,
+      "rating": 2,
       "reviews": "Wonderful (993 reviews)",
-      "Price": "$240",
+      "price": "$240",
       "total": "$865 total",
-      "tag": "Member price available"
+      "tag": "Member price available",
+      "popularF": "Pool",
+      "populatL": "port of geonoa ",
+      "meals": " Dinner included",
+      "amenities": "Free airport shuttle",
+      "expediaR": "VIP Access Properties",
+      "accesibility": "Elevator"
     },
     {
       "id": 7,
@@ -93,11 +129,17 @@
       "p1": "Nothing feels like being there in person",
       "p2": "Whether it's travelling to see family, freinds or collueges we look forward to welcoming you. Kids stay and eat free.Book now",
       "refund": "",
-      "rating": 2.5,
+      "rating": 4,
       "reviews": "Very Good (993 reviews)",
-      "Price": "$346",
+      "price": "$346",
       "total": "$579 total",
-      "tag": "Member price available"
+      "tag": "Member price available",
+      "popularF": "All inclusive",
+      "populatL": "cruise ship terminal",
+      "meals": "All inclusive",
+      "amenities": "Free airport shuttle",
+      "expediaR": "VIP Access Properties",
+      "accesibility": "Accecibility bathroom"
     },
     {
       "id": 8,
@@ -109,9 +151,15 @@
       "refund": "",
       "rating": 5,
       "reviews": "Wonderful (683 reviews)",
-      "Price": "$870",
+      "price": "$870",
       "total": "$1668 total",
-      "tag": "Member price available"
+      "tag": "Member price available",
+      "popularF": "Ocean view",
+      "populatL": "Old fort",
+      "meals": "All inclusive",
+      "amenities": "Spa",
+      "expediaR": "Member Prices",
+      "accesibility": "Roll-in-shower"
     },
     {
       "id": 9,
@@ -121,11 +169,17 @@
       "p1": "Genova city center, Stay safe sleep well",
       "p2": "Just renovated, Health and safety prevention measures adopted. Restaurant with open terrace Parking available",
       "refund": "Breakfast Included",
-      "rating": 1.9,
+      "rating": 1,
       "reviews": "Good (440 reviews)",
-      "Price": "$87",
+      "price": "$87",
       "total": "$250 total",
-      "tag": "Member price available"
+      "tag": "Member price available",
+      "popularF": "old port",
+      "populatL": "pizaa de ferrari",
+      "meals": "All inclusive",
+      "amenities": "Spa",
+      "expediaR": "Member Prices",
+      "accesibility": "Wheelchair-accecibility parking"
     },
     {
       "id": 10,
@@ -135,11 +189,17 @@
       "p1": "Genova city center, Stay safe sleep well",
       "p2": "Just renovated, Health and safety prevention measures adopted. Restaurant with open terrace Parking available",
       "refund": "Reserve now, pay later",
-      "rating": 4.5,
+      "rating": 5,
       "reviews": "Exellent (993 reviews)",
-      "Price": "$565",
+      "price": "$565",
       "total": "$1768 total",
-      "tag": "Member price available"
+      "tag": "Member price available",
+      "popularF": "Ocean view",
+      "populatL": " gaslini hospital",
+      "meals": "All inclusive",
+      "amenities": "Spa",
+      "expediaR": "VIP Access Properties",
+      "accesibility": "Elevator"
     }
   ]
 }
