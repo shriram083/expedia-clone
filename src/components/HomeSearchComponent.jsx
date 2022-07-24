@@ -11,7 +11,7 @@ import {
 const HomeSearchComponent = () => {
   return (
     <Accordion style={{margin:"auto" , width:"80%"}} >
-        <Flex border={"1px solid red"}>
+        <Flex>
   <AccordionItem>
     <h2>
       <AccordionButton>
