@@ -109,9 +109,6 @@ Start the local API server
 ## Or refer any one deployed link
 
 ### Netlify Link
-
-
-
-### Vercel Link
+https://expedia-clone-rct-211.netlify.app/
 
 
