@@ -11,9 +11,40 @@ import {
   Heading,
   Text,
   useColorModeValue,
+  Center,
 } from '@chakra-ui/react';
+import { useState } from 'react';
+import { FcGoogle } from 'react-icons/fc'; 
+import {Link as RouterLink,useNavigate} from "react-router-dom";
+import { useSelector,useDispatch } from 'react-redux';
+import { LOGIN_SUCCESS } from '../redux/auth/authTypes';
+import { login } from '../redux/auth/authActions';
 
 export default function Login() {
+  const [email,setEmail] =useState("");
+  const [password,setPassword] =useState("");
+  const dispatch =useDispatch();
+  const navigate = useNavigate();
+  const isLoading = useSelector(state=>state.authReducer.isLoading);
+
+  const loginHandler=()=>{
+    if(email && password){
+      const params ={
+        email,password
+      }
+      dispatch(login(params)).then((res)=>{
+        if(res===LOGIN_SUCCESS){
+          navigate("/",{replace:true})
+        }
+        else{
+          alert("invalid email or password");
+        }
+      })
+    }
+  }
+
+
+
   return (
     <Flex
       minH={'100vh'}
@@ -34,12 +65,12 @@ export default function Login() {
           p={8}>
           <Stack spacing={4}>
             <FormControl id="email">
-              <FormLabel>Email address</FormLabel>
-              <Input type="email" placeholder='Email address'/>
+              
+              <Input type="email" value={email} placeholder='Email address' onChange={(e)=>setEmail(e.target.value)}/>
             </FormControl>
             <FormControl id="password">
-              <FormLabel>Password</FormLabel>
-              <Input type="password" placeholder='password'/>
+              
+              <Input type="password" value={password} placeholder='password' onChange={(e)=>setPassword(e.target.value)}/>
             </FormControl>
             <Stack spacing={10}>
               <Stack
@@ -48,23 +79,31 @@ export default function Login() {
                 justify={'space-between'}>
                 <Checkbox>This is a public or shared device</Checkbox>                
               </Stack>
+              <Text fontSize={"12px"}>By signing in, I agree to the Expedia Terms and Conditions, Privacy Statement and Expedia Rewards Terms and Conditions.</Text>
               <Button
                 bg={'blue.400'}
                 color={'white'}
                 _hover={{
                   bg: 'blue.500',
-                }}>
+                }}
+                onClick={loginHandler}>
                 Sign in
               </Button>
             </Stack>
-            <Link color={'blue.400'}>Forgot password?</Link>
+            <Center><Link color={'blue.400'}>Forgot password?</Link></Center>
             <Stack
                 direction={{ base: 'column', sm: 'row' }}
                 align={'start'}
                 justifyContent={"center"}>
                 <Box>Don't have an account?</Box>
-                <Link color={'blue.400'}>CreateOne</Link>                
+                <Link href="/signup"color={'blue.400'}>CreateOne</Link>                
               </Stack>
+              <Center>or continue with</Center>
+              <Stack justifyContent={"center"}>
+                <Box></Box>
+                <Box></Box>
+                <Box>{<FcGoogle/>}</Box>
+              </Stack>    
           </Stack>
         </Box>
       </Stack>

@@ -2,21 +2,20 @@ import { Routes, Route, Link } from "react-router-dom";
 import { Button } from "@chakra-ui/react";
 import "./App.css";
 import Package from "./pages/Package";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import PackageDetails from "./pages/PackageDetails";
 import Service from "./pages/Service";
-
-import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-
 import Login from "./pages/Signin";
 import SignupCard from "./pages/Signup";
+
 
 
 function App() {
   return (
     <div className="App">
+      <Navbar/>
       <Link to="/">
         <Button>Home</Button>
       </Link>
@@ -29,7 +28,6 @@ function App() {
       <Link to="/service">
         <Button>Support</Button>
       </Link>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<Login/>} />
@@ -38,7 +36,9 @@ function App() {
         <Route path="/package/:id" element={<PackageDetails />} />
         <Route path="/service" element={<Service />} />
       </Routes>
-      <Footer />
+
+      <Footer/>
+
     </div>
   );
 }

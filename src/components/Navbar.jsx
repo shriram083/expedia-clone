@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+// import { ReactNode } from "react";
 import {
   Box,
   Flex,
@@ -15,13 +15,14 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
-  Tabs,
+  // Tabs,
   Image,
+  Tabs,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
   CloseIcon,
-  AddIcon,
+  // AddIcon,
   BellIcon,
   ChevronDownIcon,
 } from "@chakra-ui/icons";
@@ -72,10 +73,30 @@ export default function Navbar() {
               />
             </Box>
             <HStack>
-              <Box>
-                <Tabs>More Travel{<ChevronDownIcon />}</Tabs>
-              </Box>
-            </HStack>
+            <Menu>
+                <MenuButton
+                  px={4}
+                  py={2}
+                  transition='all 0.2s'
+                  border={"none"}
+                  _hover={{ bg: 'gray.400' }}
+                  _expanded={{ bg: 'blue.400' }}
+                  _focus={{ boxShadow: 'outline' }}
+                >
+                  More Travel<ChevronDownIcon />
+                </MenuButton>
+                <MenuList>
+                  <MenuItem>Stays</MenuItem>
+                  <MenuItem>Flights</MenuItem>
+                  <MenuItem>Cars</MenuItem>
+                  <MenuItem>Packages</MenuItem>
+                  <MenuItem>Things To Do</MenuItem>
+                  <MenuItem>Cruises</MenuItem>
+                  <MenuItem>Deals</MenuItem>
+                  <MenuItem>Groups&Meetings</MenuItem>
+                </MenuList>
+                </Menu>
+              </HStack>
             <Flex alignItems={"center"} justifycontent={"left"} spacing={4}>
               <HStack
                 as={"nav"}
@@ -100,12 +121,12 @@ export default function Navbar() {
               >
                 <Avatar
                   size={"sm"}
-                  src={
-                    "https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=b616b2c5b373a80ffc9636ba24f7a4a9"
-                  }
+                  src='https://bit.ly/broken-link'
                 />
               </MenuButton>
               <MenuList>
+              <Button bgColor={"blue"} borderRadius={"5px"} maxW={"100%"}><Link href='/signin'>Signin</Link></Button>
+                <Link href={"/signup"}><Tabs>Signup,it's free</Tabs></Link>
                 <MenuItem>List of Favourites</MenuItem>
                 <MenuItem>Expedia Rewards</MenuItem>
                 <MenuDivider />
