@@ -1,10 +1,16 @@
-import { Heading, SimpleGrid,Input,Text,Box,Stack,Container,Flex,Image,HStack,Button,Center} from "@chakra-ui/react";
+import { Heading, SimpleGrid,Input,Text,Box,Stack,Container,Flex,Image,HStack,Button,Center,Link} from "@chakra-ui/react";
 import React from "react";
-// import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
+import HomeSearchComponent from "../components/HomeSearchComponent";
+
+
+
 const Home = () => {
   return <div>
     <SimpleGrid gap={"10px"}>
+      <Container>
+        <HomeSearchComponent/>
+        <Button bgColor={"blue"} ><Link href={"/package"}>Search Hotels</Link></Button>
+      </Container>
       <Container maxWidth={"80%"} gap={2}>
           <Flex border={"1px solid grey"} borderRadius={"5px"} gap={4}>
           <Box maxW={"25%"}><Image boxSize={"200px"} objectFit={"cover"} src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg" alt="Images1"/></Box>
@@ -50,13 +56,46 @@ const Home = () => {
         <Heading as ="h3" size={"lg"}>Places words can't describe</Heading>
         <Text>Coastlines are the only beginning.Get to know all the Maine</Text>
       </Box>
-
     </SimpleGrid>
+    <SimpleGrid width={"80%"} columns={3} margin={"auto"} marginTop={"2%"} gap={5} cursor={"pointer"} >
+      <Box borderRadius={"5%"} padding={"2%"}>
+        <Image borderRadius={"5%"} src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2VhJTIwYmVhY2glMjB3aXQlMjBocGVvcGxlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
+        <Heading as="h3" size={"sm"} fontWeight={"light"}>VIP ACCESS</Heading>
+        <Text fontWeight={"bolder"}>The view looks even better as a VIP</Text>
+      </Box>
+      <Box borderRadius={"5%"} padding={"2%"}>
+        <Image borderRadius={"5%"} src="https://media.istockphoto.com/photos/couple-in-love-ride-in-cabriolet-car-picture-id878599762?k=20&m=878599762&s=612x612&w=0&h=CqouOvFuxvRmJ7y0HhaKYf_dyKVXI4App-IZdvAsg6w=" alt=""/>
+        <Heading as="h3" size={"sm"} fontWeight={"light"}>GRAB YOUR KEYS</Heading>
+        <Text fontWeight={"bolder"}>You need a Change of Scenary</Text>
+      </Box>
+      <Box borderRadius={"5%"} padding={"2%"}>
+        <Image borderRadius={"5%"} src="https://media.istockphoto.com/photos/curve-of-the-jetty-and-man-picture-id166542295?k=20&m=166542295&s=612x612&w=0&h=SGe8GqjT8z-qcWUQ4en2maAD6u7swCaaRkVE7dW-7Qs=" alt=""/>
+        <Heading as="h3" size={"sm"} fontWeight={"light"}>BRODEN YOUR HORIZONS</Heading>
+        <Text fontWeight={"bolder"}>There's a Whole lot of world out there-go see more of it</Text>
+      </Box>
+    </SimpleGrid>
+    <Flex width={"80%"} margin="auto" marginTop={"2%"} gap={4} cursor={"pointer"}>
+    <Box width={"100%"} borderRadius={"5%"}>
+        <Image width={"100%"} height={"80%"} borderRadius={"5%"} src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2VhJTIwYmVhY2glMjB3aXQlMjBocGVvcGxlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
+        <Heading as="h3" size={"sm"} fontWeight={"light"}>FOR THE LOVE OF SUMMER</Heading>
+        <Text fontWeight={"bolder"}>Chase the Sun someplace Extradinary</Text>
+      </Box>
+      <Box width={"100%"} borderRadius={"5%"}>
+        <Image width={"100%"} height={"80%"} borderRadius={"5%"} src="https://media.istockphoto.com/photos/cruisin-through-the-palm-trees-picture-id1284685747?k=20&m=1284685747&s=612x612&w=0&h=WjFHK2lKAW57v2BOarmCtlv25dBSFWR_kJWJflMnYN4=" alt=""/>
+        <Heading as="h3" size={"sm"} fontWeight={"light"}>YOUR BEACH BLISS AWAITS</Heading>
+        <Text fontWeight={"bolder"}>Experience Ultimate Relxation with a coastal Gateway</Text>
+      </Box>
+    </Flex>
+    <Flex width={"80%"} columns={2} margin={"auto"} gap={4}>
+      <Box width={"80%"} flex={3}><Image width={"100%"} height={"300px"} borderRadius={"5%"} src="https://media.istockphoto.com/photos/cropped-shot-of-tourist-woman-pulling-her-luggage-to-her-hotel-after-picture-id1183891002?k=20&m=1183891002&s=612x612&w=0&h=LO5wHycRCOCxvNpnWw-oDyGc2fOaZplpPNLG0hxh_oM=" alt="" /></Box>
+      <Box width={"20%"}><Image src="https://tpc.googlesyndication.com/simgad/1332138509148536343?" alt="" /></Box>
+    </Flex>
   
     
 
     
   </div>;
+
 };
 
 export default Home;

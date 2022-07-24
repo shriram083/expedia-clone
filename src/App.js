@@ -6,9 +6,11 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import PackageDetails from "./pages/PackageDetails";
 import Service from "./pages/Service";
+import Navbar from "./components/Navbar";
 import Login from "./pages/Signin";
 import SignupCard from "./pages/Signup";
-import Navbar from "./components/Navbar";
+
+
 
 function App() {
   return (
@@ -34,6 +36,7 @@ function App() {
         <Route path="/package/:id" element={<PackageDetails />} />
         <Route path="/service" element={<Service />} />
       </Routes>
+
       <Footer/>
 
     </div>

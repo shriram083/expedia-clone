@@ -14,6 +14,7 @@ const ChooseRoom = () => {
         alignItems="center"
         gap="20px"
         p="20px"
+        bg="white"
       >
         <Image src="https://a.travel-assets.com/travel-assets-manager/03052020/illustration__free__cancellation__sml.svg" />
         <Box textAlign="left">
